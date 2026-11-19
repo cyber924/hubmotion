@@ -1,0 +1,1 @@
+{"name":"hubmotion","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node tests/public-detail.mjs && node tests/key-settings.mjs && node tests/media-worker.mjs && node tests/motion-elements.mjs && node tests/motion-layouts.mjs && node tests/templates.mjs"}}

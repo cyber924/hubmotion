@@ -1,0 +1,10 @@
+// Template presets contain only motion choices; the user can edit every scene.
+window.HMTemplates=[
+{id:'travel',name:'여행 · 시네마틱',theme:'여행',desc:'경로와 풍경으로 완성하는 여행 이야기',color:'#d8e6a3',font:'serif',motions:['pan-left','zoom','pan-right'],layouts:['left','split','center'],graphics:['route','frame','route'],transitions:['fade','wipe','slide']},
+{id:'fashion',name:'패션 · 에디토리얼',theme:'패션',desc:'감각적인 타이포와 룩북 장면',color:'#f4cec6',font:'serif',motions:['zoom-out','pan-right','zoom'],layouts:['center','split','left'],graphics:['frame','spark','frame'],transitions:['fade','slide','wipe']},
+{id:'product',name:'제품 · 쇼케이스',theme:'제품',desc:'제품의 핵심을 또렷하게 강조',color:'#c8ebf5',font:'sans',motions:['zoom','zoom-out','pan-left'],layouts:['split','left','center'],graphics:['frame','steps','spark'],transitions:['wipe','slide','fade']},
+{id:'brand',name:'브랜드 · 스토리',theme:'브랜드',desc:'브랜드의 가치와 인상을 전달',color:'#f4daa3',font:'serif',motions:['zoom-out','pan-left','zoom'],layouts:['center','left','center'],graphics:['spark','frame','spark'],transitions:['fade','fade','wipe']},
+{id:'education',name:'교육 · 스텝 가이드',theme:'교육',desc:'단계와 흐름을 쉽게 설명',color:'#b4e3d0',font:'sans',motions:['pan-right','zoom','pan-left'],layouts:['split','left','split'],graphics:['steps','steps','route'],transitions:['slide','wipe','slide']},
+{id:'food',name:'음식 · 테이블 스토리',theme:'음식',desc:'따뜻한 색감과 맛있는 장면',color:'#ffd18d',font:'serif',motions:['zoom','pan-right','zoom-out'],layouts:['left','center','split'],graphics:['spark','frame','steps'],transitions:['fade','wipe','fade']},
+];
+window.HMApplyTemplate=(scene,t,index,color,font)=>{if(!t)return {...scene};const i=index%3;return {...scene,motion:t.motions[i],layout:t.layouts[i],graphic:t.graphics[i],transition:t.transitions[i],accent:color||t.color,fontName:font||t.font,templateKind:t.kind||(['travel','fashion','product','brand','education','food'].includes(t.id)?t.id:({'여행':'travel','패션':'fashion','제품':'product','브랜드':'brand','교육':'education','음식':'food'}[t.theme]||'')),templateId:t.id}};

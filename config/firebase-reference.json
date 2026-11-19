@@ -1,0 +1,7 @@
+{
+  "purpose": "허브모션 현재 Firebase 연결값 확인용. 애플리케이션이 이 파일을 읽지는 않습니다.",
+  "hubmotion": {"projectId":"studio-9468594759-e1255","apiKey":"AIzaSyA6FC8E5n77_Rspomy8Y4M_CAyw7IYGe8Y","authDomain":"studio-9468594759-e1255.firebaseapp.com","firestoreDatabaseId":"(default)"},
+  "mediaStorage": {"projectId":"studio-220866078-d3edb","storageBucket":"studio-220866078-d3edb.firebasestorage.app","path":"hubmotion/{uid}/{projectId}/"},
+  "imageHub": {"projectId":"studio-9240700230-1dd9a","apiKey":"AIzaSyDEpFAsf1fI65xXklKYsukAWFYw5bzaHyc","collection":"images"},
+  "note":"appId, messagingSenderId 및 측정 ID는 기존 소스에서 확인되지 않아 기재하지 않았습니다. Gemini API 키와 암호화 비밀값은 이 파일에 저장하지 않습니다."
+}
